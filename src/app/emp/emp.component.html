@@ -1,0 +1,8 @@
+<h2>Dolgozók</h2>
+<!-- <input [(ngModel)]="actPosition"> -->
+<table>
+    <tr *ngFor="let emp of emps | empfilter:actPosition ">
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+    </tr>
+</table>
